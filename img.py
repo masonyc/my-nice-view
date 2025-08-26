@@ -1,6 +1,9 @@
 from PIL import Image
 import sys
 
+from PIL import Image
+import sys
+
 def image_to_1bit(input_path, out_png, out_raw=None, target_size=None,
                   rotate_deg=0, use_dither=False, threshold=128):
     img = Image.open(input_path).convert("L")  # convert to grayscale
