@@ -113,7 +113,7 @@ int zmk_widget_screen_init(struct zmk_widget_screen *widget, lv_obj_t *parent) {
     lv_canvas_set_buffer(top, widget->cbuf, BUFFER_SIZE, BUFFER_SIZE, LV_IMG_CF_TRUE_COLOR);
 
     lv_obj_t *art = lv_img_create(widget->obj);
-    lv_img_set_src(art, &out);
+    lv_img_set_src(art, &bagel);
 
     sys_slist_append(&widgets, &widget->node);
     widget_battery_status_init();
